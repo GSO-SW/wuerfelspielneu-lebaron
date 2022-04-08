@@ -7,7 +7,7 @@ namespace Wuerfelspiel
         private int anzahlSeiten = 6;
         private int letztesErgebniss;
         private bool gesichert = false;
-        Random rnd;
+        Random rnd = new Random();
 
         public Wuerfel(int AnzahlSeiten)
         {

@@ -67,6 +67,20 @@ namespace WuerfelspielTests
 
             //assert
             Assert.AreNotEqual(gesichert, x.Gesichert);
+        }
+        
+        [TestMethod]
+        public void Wurfeln_Passt()
+        {
+            //arrange    
+            Random rnd = new Random();
+            Wuerfel x = new Wuerfel();
+
+            //act
+            x.Wurfeln();
+
+            //assert
+            Assert.IsNotNull(x.LetztesErgebniss);
         }      
     }
 }
